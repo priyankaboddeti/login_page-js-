@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>Login Page</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="javascript" href="login.js">
+
+</head>
+<body>
+<div id="box">
+<h1>Login Page</h1>
+<form id="my">
+    <div class="textboxx">
+        <label for="name">Enter UserName :</label><br>
+        <input type="email" class="textbox" id="user" name="username"></input><br>
+    </div>
+    <div class="textboxx">
+        <label for="Password">Enter Password :</label><br>
+        <input type="Password" class="textbox" id="pass" name="Pass"></input><br>
+    </div>
+    <div id="myBtn" class="but">
+        <input class="button" type="button" value="login" onclick="StoreData()"></input><br>
+    </div>
+
+</form>
+</div>
+   
+<p id="demo">hello<p>
+<p id="do"></p>
+<p id="doi"></p>
+
+<script>
+// document.getElementById("myBtn").onclick = StoreDate;
+var username;
+var password;
+var data=[];
+
+function createUser(username,password){
+   
+    const user={username,password}
+    let i = data.findIndex(obj=>obj.username==username)
+    if(i==-1)
+        data.push(user)
+    console.log(data)
+    }
+    
+
+function StoreData() 
+{
+  
+    username= document.getElementById("user").value ;
+    password=document.getElementById("pass").value;
+    createUser(username,password)  
+    
+    document.getElementById("my").reset();  
+
+}
+
+
+console.log(data)
+</script>
+</body>
+
+</html>

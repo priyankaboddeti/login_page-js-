@@ -1,0 +1,117 @@
+body
+{
+background-color:linen;
+font-family: serif;
+text-align: center;
+font-weight: 100;
+}
+
+.heading
+{
+    color:blue;
+}
+#box
+{
+align-items:center;
+}
+h1
+{
+font-size:50px;
+margin-top:50px;
+color:blue;
+text-align:center;
+}
+.textbox
+{
+padding:10px;
+width:20%;
+
+}
+label {
+    color:blue;
+    display: inline-block;
+    width: 20%;
+    text-align: left;
+    font-size: 1.3em;
+    height: 30px;
+    font-weight: 400;
+}
+.role
+{
+    width:45px;
+}
+.textboxx
+{
+color:blue;
+text-align:center;
+margin-bottom:1em;
+}
+.button
+{
+height:40px;
+width:80px;
+background-color:blue;
+color:white;
+border:2px solid;
+}
+.button{
+    text-align: center;
+    border-radius: 70px;
+   font-size: medium;
+    font-weight: 100;
+}
+.tog{
+    width: 0;
+    height: 0;
+    visibility: hidden;
+  }
+  .tog:checked + .lab::after {
+    left: calc(100% - 2px); 
+    transform: translateX(-100%);
+    }
+
+.lab
+{
+width: 56px;
+height: 27px;
+background-color: #477a85;
+border-radius: 100px;
+position: relative;
+transition: 0.5s;
+cursor: pointer;
+}
+.lab::after
+{
+    content: "";
+    width: 22px;
+  height: 21px;
+  background-color:#ffff;
+  border-radius: 70px;
+  position: absolute;
+  top:3px;
+  left:2px;
+  transition: 0.5s;
+}
+.tog:checked + .lab {
+    background-color: blue;
+    }
+.roletog{
+        display: inline-flex;
+        align-items: center;
+        width: 147px;
+        padding: 14px;
+        padding-bottom: 14px;
+
+
+}
+.labname{
+    padding-top:5px;
+    padding-left: 20px;
+}
+.labtog{
+           padding-left: 0px;
+}
+a
+{
+    color:blue;
+}
